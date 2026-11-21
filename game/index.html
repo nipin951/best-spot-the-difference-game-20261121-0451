@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mushroom Cottage Clearing — Spot the Difference</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hud">
+    <div class="hud-left">
+      <h1>🍄 Mushroom Cottage Clearing</h1>
+      <span id="hud-level" class="chip">Level 1 · First Look</span>
+    </div>
+    <div class="hud-right">
+      <span class="chip remain"><strong id="hud-remain">–</strong> to find</span>
+      <span class="chip">⏱ <span id="hud-time">3:00</span></span>
+      <span class="chip">Score <strong id="hud-score">0</strong></span>
+      <button id="btn-hint" class="chip button"><span id="hud-hints">💡 Hint (3)</span></button>
+      <button id="btn-restart" class="chip button">↺ Restart</button>
+    </div>
+  </header>
+  <div class="time-track"><div id="time-bar"></div></div>
+
+  <main id="panels">
+    <figure class="panel">
+      <canvas id="panel-left" width="520" height="390"></canvas>
+      <figcaption>Original</figcaption>
+    </figure>
+    <figure class="panel">
+      <canvas id="panel-right" width="520" height="390"></canvas>
+      <figcaption>Spot the changes</figcaption>
+    </figure>
+  </main>
+
+  <p class="howto">Click a difference on either picture to ring it on both. A wrong click costs 5 seconds. Three hints per level — a golden ring shimmers around one hiding place.</p>
+
+  <div id="overlay" class="overlay hidden">
+    <div class="card">
+      <h2 id="overlay-title"></h2>
+      <p id="overlay-text"></p>
+      <button id="overlay-button"></button>
+    </div>
+  </div>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
