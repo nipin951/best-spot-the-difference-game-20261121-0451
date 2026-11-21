@@ -1,5 +1,6 @@
 // Mushroom Cottage Clearing — an original spot-the-difference game (see README.md).
-// The game lives in game/ as plain static files; this program hands it in.
+// The game lives in game/ as plain static files with no build step; this
+// program copies them to the output and writes the dossier.
 // A working best-game-01 entry (Node 22, standard library only): the game is this directory's
 // game/ folder, plain static files a desktop browser loads offline (game/index.html and its ES
 // modules, no library and no network request), and the program hands it in. It copies game/ and
